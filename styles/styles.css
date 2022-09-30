@@ -1,215 +1,61 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    overflow-wrap: normal;
-    justify-content: center;
-    width: 100%;
-}
-
-a {
-    padding: 5%;
-    text-decoration: none;
-
-}
-
-br {
-    color: gray;
-}
-
-h1 {
-    font-weight: bold;
-    color: rgb(17, 16, 16);
-    padding: 0.5rem;
-}
-
 /* principio estilizado header */
 .header__flex {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgba(0, 0, 0, 0.845);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: 700;
+  height: 5rem;
+  position: fixed;
 }
+
 .nav__flex {
-    width: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vh;
 }
 @media (max-width: 768px) {
-    .nav__flex {
-        width: auto;
-    }
+  .nav__flex {
+    width: auto;
+  }
 }
 .nav__flex ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    padding: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0.9rem;
 }
-@media screen and (max-width: 720px) {
-    .nav__flex ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+@media (max-width: 720px) {
+  .nav__flex ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.nav__flex ul li {
+  padding: 0 1rem;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.nav__flex ul li:hover {
+  color: rgb(0, 0, 0);
 }
 .nav__flex ul li a {
-    color: rgb(255, 255, 255);
-    font-size: larger;
-    font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: larger;
+  font-weight: bold;
 }
 @media screen and (max-width: 720px) {
-    .nav__flex ul li a {
-        color: white;
-        font-size: larger;
-        font-weight: bold;
-        padding: 0.5rem;
-    }
-    
-}
-/* fin estilizado header */
-
-.flex__main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 1rem;
-}
-
-.flex__main h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    padding: 1rem;
-    text-align: center;
-}
-
-.flex__main h2{
-    font-size: 2rem;
-    font-weight: bold;
-    padding: 1rem;
-    text-align: center;
-}
-
-.main__image-form{
-    display: flex;
-    justify-content: center;
-
-}
-
-@media screen and (max-width: 1200px) {
-    .main__image-form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: auto;
-    }
-}
-/*inicio estilizacion formulario join-us.html */
-.image__container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    padding: 1rem;
-}
-@media
-screen and (max-width: 920px) {
-    .image__container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-        padding: 1rem;
-    }
-}
-
-@media screen and (max-width: 560px) {
-    .image__container{
-        display: none
-    }
-}
-
-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    padding: 1rem;
-}
-
-.flex__form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    padding: 1rem;
-    margin: 25%;
-}
-@media screen and (max-width: 920px) {
-    .flex__form{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-        padding: 1rem;
-    }
-}
-
-.flex__form label{
+  .nav__flex ul li a {
+    color: rgb(255, 255, 255);
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 1rem;
-    text-align: center;
+  }
 }
 
-.flex__form input{
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 1rem;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
-.flex__form textarea{
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 1rem;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 5px;
-}
-/*fin estilizacion formulario join-us.html */
-
-
-/* start: footer styles using flexbox and styling the footer links */
-.flex__footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: space-evenly;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    flex-wrap: wrap;
-}
-
-.flex__footer--item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 50%;
-    margin: 1%;
-}
-
-i {
-    color: aliceblue;
-}
-/*end: footer styles using flexbox and styling the footer links */
+/*# sourceMappingURL=styles.css.map */

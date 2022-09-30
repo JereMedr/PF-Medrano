@@ -1,3 +1,18 @@
-h1{
-    color: aquamarine;
-}
+@import "./utils/variables";
+@import "./base/reset";
+@import "./base/typo";
+
+@import "./components/botones";
+@import "./components/formularios";
+
+@import "./layouts/header";
+@import "./layouts/footer";
+
+@import "./pages/index";
+@import "./pages/about-us";
+@import "./pages/join-us";
+@import "./pages/multimedia";
+@import "./pages/pokedex";
+
+
+

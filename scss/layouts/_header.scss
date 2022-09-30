@@ -1,0 +1,58 @@
+/* principio estilizado header */
+
+.header__flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: $color-header;
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: 5rem;
+    position: fixed;
+
+}
+
+.nav__flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vh;
+    height: 100%;
+
+    @media (max-width: $resolucion-small){
+        width: auto;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0.9rem;
+        @media (max-width: 720px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        li{
+            padding: 0 1rem;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+            color: $color-header;
+            }
+            a{
+                color: rgb(255, 255, 255);
+                font-size: larger;
+                font-weight: bold;
+                @media screen and (max-width: 720px){
+                    color: rgb(255, 255, 255);
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                }
+                    
+                }
+            }
+        }
+    }
