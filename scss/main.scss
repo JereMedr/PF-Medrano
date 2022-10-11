@@ -1,4 +1,6 @@
 @import "./utils/variables";
+@import "./utils/labels";
+
 @import "./base/reset";
 @import "./base/typo";
 
@@ -7,6 +9,7 @@
 
 @import "./layouts/header";
 @import "./layouts/footer";
+@import "./layouts/center-pages";
 
 @import "./pages/index";
 @import "./pages/about-us";

@@ -1,0 +1,21 @@
+.flex__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    flex-wrap: wrap;
+    &--item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 50%;
+        margin: 1%;
+    }
+}
+
+i {
+    color: $item-color-footer;
+}
