@@ -286,4 +286,146 @@ i {
   }
 }
 
+.carousel__description {
+  color: black;
+}
+
+.multimedia__video {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+  .multimedia__video {
+    flex-direction: column;
+  }
+}
+
+iframe {
+  width: 50%;
+  height: 50%;
+  margin: 0.5rem;
+}
+@media screen and (max-width: 768px) {
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.title {
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.main__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.main__image:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .main__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
+@media (max-width: 560px) {
+  .main__image {
+    display: none;
+  }
+}
+
+.pokedex__display {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .pokedex__display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 1rem;
+  }
+}
+
+.pokemon__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  background-color: rgb(238, 12, 12);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.pokemon__card:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .pokemon__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
+@media (max-width: 560px) {
+  .pokemon__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
+.pokemon__card--name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+}
+.pokemon__card--image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+.pokemon__card--description {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+}
+
 /*# sourceMappingURL=styles.css.map */

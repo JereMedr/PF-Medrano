@@ -1,0 +1,103 @@
+.main__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+
+
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.1);
+    }
+    @media (max-width: $resolucion-small) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    
+    @media (max-width: $resolucion-smaller) {
+        display: none;
+    }
+}
+
+.pokedex__display{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    @media (max-width: $resolucion-small) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 1rem;
+    }
+}
+
+.pokemon__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(238, 12, 12);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.1);
+    }
+    @media (max-width: $resolucion-small) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    
+    @media (max-width: $resolucion-smaller) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    &--name{
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    &--image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 1rem;
+    }
+
+    &--description{
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 1rem;
+        text-align: center;
+    }
+}
