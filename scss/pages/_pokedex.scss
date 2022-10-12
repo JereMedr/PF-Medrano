@@ -1,4 +1,4 @@
-.main__image{
+.main__image {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,9 +10,11 @@
 
     transition: all 0.3s ease-in-out;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
         transform: scale(1.1);
     }
+
     @media (max-width: $resolucion-small) {
         display: flex;
         justify-content: center;
@@ -21,18 +23,24 @@
         padding: 1rem;
         margin: 1rem;
     }
-    
+
     @media (max-width: $resolucion-smaller) {
         display: none;
     }
 }
 
-.pokedex__display{
+.pokedex__body{
+    background-color: red;
+}
+
+.pokedex__display {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: auto;
+    padding: 1rem;
 
-    @media (max-width: $resolucion-small) {
+    @media (max-width: $resolucion-smaller) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -41,50 +49,32 @@
     }
 }
 
-.pokemon__card{
+.pokemon__card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 20%;
+    width: 70%;
     padding: 1rem;
     margin: 1rem;
     border-radius: 1rem;
-    background-color: rgb(238, 12, 12);
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
         transform: scale(1.1);
     }
-    @media (max-width: $resolucion-small) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 60%;
-        padding: 1rem;
-        margin: 1rem;
-    }
-    
-    @media (max-width: $resolucion-smaller) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-        padding: 1rem;
-        margin: 1rem;
-    }
 
-    &--name{
+    &--name {
         font-size: 1.5rem;
         font-weight: bold;
         padding: 1rem;
         text-align: center;
     }
 
-    &--image{
+    &--image {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -92,12 +82,30 @@
         padding: 1rem;
         margin: 1rem;
         border-radius: 1rem;
+
+        @media screen and (max-width: $resolucion-large) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            padding: 1rem;
+            margin: 1rem;
+        }
+
     }
 
-    &--description{
+    &--description {
         font-size: 1rem;
         font-weight: bold;
         padding: 1rem;
         text-align: center;
     }
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
