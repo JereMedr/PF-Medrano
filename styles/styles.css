@@ -315,7 +315,7 @@ i {
 
 iframe {
   width: 50%;
-  height: 50%;
+  height: 100%;
   margin: 0.5rem;
 }
 @media screen and (max-width: 768px) {
