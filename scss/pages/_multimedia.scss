@@ -1,8 +1,8 @@
-.carousel__description{
+.carousel__description {
     color: black;
 }
 
-.multimedia__video{
+.multimedia__video {
     display: flex;
     flex-direction: row;
 
@@ -11,7 +11,7 @@
     }
 }
 
-iframe{
+iframe {
     width: 50%;
     height: 100%;
     margin: 0.5rem;
@@ -22,11 +22,11 @@ iframe{
     }
 }
 
-.title{
+.title {
     text-align: center;
 }
 
-.subtitle{
+.subtitle {
     font-size: 2rem;
     font-weight: bold;
     color: rgb(0, 0, 0);

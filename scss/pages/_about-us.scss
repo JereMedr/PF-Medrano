@@ -1,4 +1,4 @@
-.title{
+.title {
     font-size: 60px;
     color: #000;
     font-weight: 600;
@@ -25,7 +25,7 @@
     @media screen and (max-width: $resolucion-medium) {
         display: flex;
         flex-direction: column;
-        justify-content: center;  
+        justify-content: center;
         width: 100%;
 
     }
@@ -38,7 +38,7 @@
         align-items: center;
 
         @media screen and (max-width: $resolucion-smaller) {
-            width:80%;
+            width: 80%;
             text-align: center;
         }
 
@@ -47,21 +47,21 @@
             text-align: center;
         }
 
-        @media  screen and (max-width: $resolucion-larger) {
+        @media screen and (max-width: $resolucion-larger) {
             width: 100%;
             text-align: center;
             padding: 5%;
             margin: 5%;
         }
-            
-            
+
+
 
     }
 
     &--image {
         width: 30%;
         height: 30%;
-        
+
 
         @media screen and (max-width: $resolucion-medium) {
             display: flex;

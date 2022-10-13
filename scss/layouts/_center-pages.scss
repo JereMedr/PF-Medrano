@@ -5,15 +5,15 @@
     align-items: center;
     width: 100%;
     padding: 1rem;
-    
-    h1{
+
+    h1 {
         font-size: 3rem;
         font-weight: bold;
         padding: 1rem;
         text-align: center;
     }
 
-    h2{
+    h2 {
         font-size: 2rem;
         font-weight: bold;
         padding: 1rem;
@@ -21,7 +21,7 @@
     }
 }
 
-.main__image-form{
+.main__image-form {
     display: flex;
     justify-content: center;
 
@@ -33,7 +33,7 @@
     }
 }
 
-.image__container{
+.image__container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +47,7 @@
         width: auto;
         padding: 1rem;
     }
-    
+
     @media (max-width: $resolucion-smaller) {
         display: none;
     }
